@@ -1,0 +1,30 @@
+{
+  "name": "@hiroqn/cycle-ses-patern",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/hiroqn/cycle-ses-patern.git",
+  "author": "hiroqn <hiroqn1008@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^2.7.2"
+  },
+  "devDependencies": {
+    "@cycle/dom": "^20.2.0",
+    "@cycle/isolate": "^3.2.0",
+    "@cycle/run": "^4.1.0",
+    "browser-sync": "^2.23.6",
+    "rollup": "^0.57.1",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "stylus": "^0.54.5",
+    "xstream": "^11.2.0"
+  },
+  "scripts": {
+    "watch:tsc": "tsc -p . --outDir dist -w",
+    "watch:rollup": "rollup -c -w",
+    "watch:stylus": "stylus main.styl -o dist/styles.css -w",
+    "watch:browser-sync": "browser-sync start --server . --files . --reload-debounce 500",
+    "build": "tsc -p . && stylus main.styl -o dist/styles.css"
+  }
+}

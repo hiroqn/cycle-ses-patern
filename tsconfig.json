@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "lib": [
+      "ES2015",
+      "ES2016",
+      "ES2017",
+      "DOM"
+    ],
+    "module": "ES6",
+    "moduleResolution": "node",
+    "noEmitOnError": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "strict": true,
+    "strictFunctionTypes": false,
+    "target": "ES2017"
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
